@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Quote</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const quotes = [
+            "Believe in yourself and all that you are.",
+            "The only way to do great work is to love what you do.",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+            "Don’t watch the clock; do what it does. Keep going.",
+            "Your limitation—it’s only your imagination.",
+            "Push yourself, because no one else is going to do it for you.",
+            "Great things never come from comfort zones.",
+            "Dream it. Wish it. Do it.",
+            "Stay positive, work hard, make it happen.",
+            "Act as if what you do makes a difference. It does."
+        ];
+
+        // Get a random quote
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+        // Display the quote
+        document.body.innerHTML = `<div>${randomQuote}</div>`;
+    </script>
+</body>
+</html>
